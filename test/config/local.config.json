@@ -1,0 +1,6 @@
+{
+  "urls": {
+    "baseUrl": "http://localhost:3901/cc",
+    "healthCheck": "http://localhost:3901/cc/v1/management/health-check"
+  }
+}

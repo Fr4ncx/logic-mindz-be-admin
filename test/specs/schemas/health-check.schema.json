@@ -1,0 +1,14 @@
+{
+  "$id": "health-check.schema.json",
+  "type": "object",
+  "maxProperties": 1,
+  "minProperties": 1,
+  "properties": {
+    "status": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "status"
+  ]
+}

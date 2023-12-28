@@ -1,0 +1,6 @@
+{
+  "urls": {
+    "baseUrl": "https://api.logic-mindz.com/",
+    "healthCheck": "https://api.logic-mindz.com/v1/management/health-check"
+  }
+}

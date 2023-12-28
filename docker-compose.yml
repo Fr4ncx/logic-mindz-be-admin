@@ -1,0 +1,21 @@
+version: "3"
+services:
+  sc-country-module:
+    container_name: sc-country
+    restart: always
+    build:
+      context: .
+    ports:
+      - "3300:3300"
+    image: sc-country
+    links:
+      - mongo
+    depends_on:
+      - mongo
+  mongo:
+    container_name: mongo
+    image: mongo:4.4
+    volumes:
+      - ${MONGO_DB_PATH}:/data/db
+    ports:
+      - "27021:27017"
