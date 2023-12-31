@@ -1,15 +1,13 @@
 import {ApiBearerAuth, ApiTags} from '@nestjs/swagger';
 import {VersionedJsonController} from '../common/decorators/VersionedJsonController';
 import {V1BaseRoute} from '../utils/routes/V1BaseRoute';
-import {Body, Get, Param, Post, Query, Request, UseGuards} from '@nestjs/common';
+import {Body, Get, Param, Post, Query, UseGuards} from '@nestjs/common';
 import {BaseRoute} from '../utils/routes/BaseRoute';
 import {JwtAuthGuard} from "../auth/jwt-auth.guard";
 import {CreateInvoiceDto} from "./dto/create-invoice.dto";
 import {InvoiceService} from "./services/invoice.service";
 import {EntityResponse} from "../utils/api/EntityResponse";
 import {GetAllInvoiceDto} from "./dto/get-all-invoice.dto";
-import {ApiPaginatedResponse} from "../common/decorators/paginated-response.decorator";
-import {PaginatedDto} from "../common/dto/paginated.dto";
 import {PaginatedResponse} from "../utils/api/PaginatedResponse";
 
 
